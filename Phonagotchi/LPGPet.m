@@ -10,4 +10,21 @@
 
 @implementation LPGPet
 
+-(instancetype)init {
+    self = [super init];
+    if (self){
+        _isGrumpy = NO;
+    }
+    return self;
+}
+
+- (void)petPet: (CGPoint)velocity {
+    if (velocity.x > 2000 || velocity.x < -2000 || velocity.y < -2000 || velocity.y > 2000) {
+        _isGrumpy = YES;
+    }
+    else {
+        _isGrumpy = NO;
+    }
+    
+}
 @end

@@ -10,6 +10,9 @@
 
 @interface LPGPet : NSObject
 
-@property (readonly, nonatomic) BOOL petIsGrumpy;
+@property (readonly, nonatomic) BOOL isGrumpy;
+
+- (void)petPet: (CGPoint)velocity;
+
 
 @end
